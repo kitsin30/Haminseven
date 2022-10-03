@@ -1,0 +1,158 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* responsive */
+    flex-wrap: wrap;
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    color: white;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    
+}
+
+.navbar .menu{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .menu .nav{
+    color: white;
+    text-decoration: none;
+    padding: 17px 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar .menu .nav:hover{
+    color: cadetblue;
+}
+
+
+
+.navbar .menu .submenu li{
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.navbar .menu .submenu li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5px 5px;
+}
+.navbar .menu .navinfo.info:hover .submenu li a:hover{
+    color: cadetblue;
+}
+
+
+.navbar .menu .submenu{
+    background-color: black;
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 0;
+    width: 250px;
+    display: none;
+}
+
+
+.navbar .menu .navinfo.info{
+    position: relative;
+}
+.navbar .menu .navinfo.info:hover .submenu{
+    display: block;
+    animation: dropdown 0.5s ease-in-out;
+    transform-origin: top;
+}
+@keyframes dropdown{
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+
+
+
+/* responsive */
+@media(max-width: 800px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        font-size: 15px;
+        padding: 0;
+        
+    }
+    .submenu{
+        font-size: 15px;
+    }
+    .navbar .logo{
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+@media(max-width: 600px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        font-size: 12px;
+        padding: 0;
+    }
+    .submenu{
+        font-size: 12px;
+    }
+    .navbar .logo{
+        width: 100px;
+        height: auto;
+    }
+}
+
+
+@media(max-width: 500px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        flex-direction: column;
+        font-size: 8px;
+        padding: 0;
+    }
+    .submenu{
+        font-size: 8px;
+    }
+    .navbar .logo{
+        width: 100px;
+        height: auto;
+    }
+}

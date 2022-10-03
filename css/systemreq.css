@@ -1,0 +1,91 @@
+.system{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: grey;
+    padding: 30px 30px;
+}
+.divA
+{
+    width:80%;
+	height:40px;
+	margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#title{
+    text-align:center;
+    padding:30px;
+    font-size: 45px;
+    color: white;
+}
+.divB
+{
+    background-color:#DDDDDD;
+    width:20%;
+	height:100%;
+	padding:2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divC
+{
+	background-color:#EEEEEE;
+	width:80%;
+	height:100%;
+	padding:2px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.divB, .divC{
+    font-size: 15px;
+}
+
+
+
+
+/* responsive */
+@media(max-width: 1000px){
+    #title{
+        font-size: 40px;
+    }
+    .divB,.divC{
+        font-size: 13px;
+    }
+}
+
+
+
+@media(max-width: 800px){
+    #title{
+        font-size: 35px;
+    }
+    .divB,.divC{
+        font-size: 12px;
+    }
+}
+
+
+@media(max-width: 600px){
+    #title{
+        font-size: 32px;
+    }
+    .divB,.divC{
+        font-size: 11px;
+    }
+}
+
+
+@media(max-width: 500px){
+    #title{
+        font-size: 25px;
+    }
+    .divB,.divC{
+        font-size: 6px;
+        padding-left: 2px;
+    }
+}

@@ -1,0 +1,154 @@
+.container{
+    background-image: url("../asset/home/background1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+
+#map1{
+    font-size: 45px;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.images p{
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.desc{
+    font-size: 20px;
+    padding: 0;
+    float: left;
+    width: 60%;
+    text-align: start;
+}
+
+.images img{
+    width: 400px;
+    height: auto;
+}
+
+
+
+
+/* responsive */
+@media(max-width: 1000px){
+    .images img, .images .desc #map1, .images .desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .images .desc #map1{
+        font-size: 40px;
+    }
+    .images .desc p{
+        font-size: 20px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media(max-width: 800px){
+    .container h1{
+        font-size: 50px;
+    }
+    .images img, .images .desc #map1, .images .desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .images .desc #map1{
+        font-size: 30px;
+    }
+    .images .desc p{
+        font-size: 15px;
+    }
+    .images img{
+        width: 350px;
+        height: auto;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(max-width: 600px){
+    .container h1{
+        font-size: 40px;
+    }
+    .images img, .images .desc #map1, .images .desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .images img{
+        width: 300px;
+        height: auto;
+    }
+    .images .desc #map1{
+        font-size: 20px;
+    }
+    .images .desc p{
+        font-size: 10px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(max-width: 500px){
+    .container h1{
+        font-size: 40px;
+    }
+    .images img, .images .desc #map1, .images .desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .images img{
+        width: 200px;
+        height: auto;
+    }
+    .images .desc #map1{
+        font-size: 20px;
+    }
+    .images .desc p{
+        font-size: 10px;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
